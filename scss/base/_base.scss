@@ -1,3 +1,15 @@
 // compass
 @import 'compass';
 @import 'compass/reset';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: $base-font-size;
+}

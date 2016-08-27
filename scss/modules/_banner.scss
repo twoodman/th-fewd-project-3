@@ -1,0 +1,15 @@
+.banner {
+  height: 70px;
+  width: 100%;
+  background: $color-bg-dark;
+  color: $color-base-white;
+  @include display-flex();
+  @include flex-wrap(nowrap);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  h1 {
+    font-family: $serif-stack;
+    font-weight: bolder;
+  }
+}
