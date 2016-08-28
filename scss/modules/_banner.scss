@@ -1,5 +1,5 @@
 .banner {
-  height: 70px;
+  height: 50px;
   width: 100%;
   background: $color-bg-dark;
   color: $color-base-white;
@@ -8,8 +8,4 @@
   @include flex-direction(column);
   @include justify-content(center);
   @include align-items(center);
-  h1 {
-    font-family: $serif-stack;
-    font-weight: bolder;
-  }
 }
