@@ -24,126 +24,129 @@
     <form method="post" action="">
       <!-- contact info
       ======================================= -->
-      <fieldset>
-        <legend>Contact Information</legend>
+      <div class="contact-info">
+        <fieldset>
+          <legend>Contact Information</legend>
 
-        <div class="field">
-          <label for="name">Full Name</label>
-          <input type="text" name="name" required placeholder="Kylo Ren">
-        </div>
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required placeholder="Required">
+          </div>
 
-        <div class="field">
-          <label for="email">Email Address</label>
-          <input type="email" name="email" required placeholder="kren@firstorder.com">
-        </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder="Required">
+          </div>
 
-        <div class="field">
-          <label for="website">Website</label>
-          <input type="url" name="website" placeholder="http://firstorder.com">
-        </div>
+          <div class="field">
+            <label for="website">Website</label>
+            <input type="url" id="website">
+          </div>
 
-        <div class="field">
-          <label for="primary-phone-number">Primary Phone Number</label>
-          <input type="tel" name="primary-phone-number" placeholder="1-888-1ST-ORDR">
-        </div>
+          <div class="field">
+            <label for="primary-phone-number">Primary Phone Number</label>
+            <input type="tel" id="primary-phone-number">
+          </div>
 
-        <div class="field">
-          <label for="secondary-phone-number">Secondary Phone Number</label>
-          <input type="tel" name="secondary-phone-number">
-        </div>
+          <div class="field">
+            <label for="secondary-phone-number">Secondary Phone Number</label>
+            <input type="tel" id="secondary-phone-number">
+          </div>
 
-        <div class="field">
-          <label for="fax-number">Fax Number</label>
-          <input type="tel" name="fax-number">
-        </div>
+          <div class="field">
+            <label for="fax-number">Fax Number</label>
+            <input type="tel" id="fax-number">
+          </div>
 
-        <div class="field">
-          <label for="street-address">Street Address</label>
-          <input type="text" name="street-address" placeholder="1 Order Ave">
-        </div>
+          <div class="field">
+            <label for="street-address">Street Address</label>
+            <input type="text" id="street-address" placeholder="Empire Ave">
+          </div>
 
-        <div class="field">
-          <label for="city">City</label>
-          <input type="text" name="city" placeholder="Coruscant">
-        </div>
+          <div class="field">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Coruscant">
+          </div>
 
-        <div class="field">
-          <label for="planet">Planet</label>
-          <select name="planet">
-            <option disabled="disabled" selected="selected">Choose Planet</option>
-            <option value="ahch-to">Ahch-To</option>
-            <option value="alderaan">Alderaan (past)</option>
-            <option value="bespin">Bespin</option>
-            <option value="corellia">Corellia</option>
-            <option value="coruscant">Coruscant</option>
-            <option value="d'qar">D'Qar</option>
-            <option value="endor">Endor</option>
-            <option value="felucia">Felucia</option>
-            <option value="geonosis">Geonosis</option>
-            <option value="hosnian-prime">Hosnian Prime</option>
-            <option value="hoth">Hoth</option>
-            <option value="ilum">Ilum</option>
-            <option value="jakku">Jakku</option>
-            <option value="jedha">Jedha</option>
-            <option value="kamino">Kamino</option>
-            <option value="kashyyyk">Kashyyyk</option>
-            <option value="kessel">Kessel</option>
-            <option value="lothal">Lothal</option>
-            <option value="malachor">Malachor</option>
-            <option value="malastare">Malastare</option>
-            <option value="mandalore">Mandalore</option>
-            <option value="maridun">Maridun</option>
-            <option value="moraband">Moraband</option>
-            <option value="mustafar">Mustafar</option>
-            <option value="mygeeto">Mygeeto</option>
-            <option value="naboo">Naboo</option>
-            <option value="nal-hutta">Nal Hutta</option>
-            <option value="onderon">Onderon</option>
-            <option value="polis-massa">Polis Massa</option>
-            <option value="rishi">Rishi</option>
-            <option value="rodia">Rodia</option>
-            <option value="ruusan">Ruusan</option>
-            <option value="ryloth">Ryloth</option>
-            <option value="scarif">Scarif</option>
-            <option value="shili">Shili</option>
-            <option value="starkiller-base">Starkiller Base (past)</option>
-            <option value="sullust">Sullust</option>
-            <option value="takodana">Takodana</option>
-            <option value="tatooine">Tatooine</option>
-            <option value="toydaria">Toydaria</option>
-            <option value="trandosha">Trandosha</option>
-            <option value="umbara">Umbara</option>
-            <option value="utapau">Utapau</option>
-            <option value="yavin">Yavin</option>
-            <option value="yavin-4">Yavin 4</option>
-          </select>
-        </div>
+          <div class="field">
+            <label for="planet">Planet</label>
+            <select id="planet">
+              <option disabled="disabled" selected="selected">Choose Planet</option>
+              <option value="ahch-to">Ahch-To</option>
+              <option value="alderaan">Alderaan (past)</option>
+              <option value="bespin">Bespin</option>
+              <option value="corellia">Corellia</option>
+              <option value="coruscant">Coruscant</option>
+              <option value="d'qar">D'Qar</option>
+              <option value="endor">Endor</option>
+              <option value="felucia">Felucia</option>
+              <option value="geonosis">Geonosis</option>
+              <option value="hosnian-prime">Hosnian Prime</option>
+              <option value="hoth">Hoth</option>
+              <option value="ilum">Ilum</option>
+              <option value="jakku">Jakku</option>
+              <option value="jedha">Jedha</option>
+              <option value="kamino">Kamino</option>
+              <option value="kashyyyk">Kashyyyk</option>
+              <option value="kessel">Kessel</option>
+              <option value="lothal">Lothal</option>
+              <option value="malachor">Malachor</option>
+              <option value="malastare">Malastare</option>
+              <option value="mandalore">Mandalore</option>
+              <option value="maridun">Maridun</option>
+              <option value="moraband">Moraband</option>
+              <option value="mustafar">Mustafar</option>
+              <option value="mygeeto">Mygeeto</option>
+              <option value="naboo">Naboo</option>
+              <option value="nal-hutta">Nal Hutta</option>
+              <option value="onderon">Onderon</option>
+              <option value="polis-massa">Polis Massa</option>
+              <option value="rishi">Rishi</option>
+              <option value="rodia">Rodia</option>
+              <option value="ruusan">Ruusan</option>
+              <option value="ryloth">Ryloth</option>
+              <option value="scarif">Scarif</option>
+              <option value="shili">Shili</option>
+              <option value="starkiller-base">Starkiller Base (past)</option>
+              <option value="sullust">Sullust</option>
+              <option value="takodana">Takodana</option>
+              <option value="tatooine">Tatooine</option>
+              <option value="toydaria">Toydaria</option>
+              <option value="trandosha">Trandosha</option>
+              <option value="umbara">Umbara</option>
+              <option value="utapau">Utapau</option>
+              <option value="yavin">Yavin</option>
+              <option value="yavin-4">Yavin 4</option>
+            </select>
+          </div>
 
-        <div class="field">
-          <label for="zip">Zip Code</label>
-          <input type="text">
-        </div>
-      </fieldset>
+          <div class="field">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" class="zip">
+          </div>
+        </fieldset>
+      </div>
       <!-- newsletter
       ======================================= -->
-      <fieldset>
-        <legend>Newsletter</legend>
-        <p>Select the newsletters you would like to receive</p>
-        <label><input type="checkbox"> HTML News</label><br>
-        <label><input type="checkbox"> CSS News</label><br>
-        <label><input type="checkbox"> JavaScript News</label><br>
-        <p>Newsletter format</p>
-        <radiogroup>
-          <radio label="HTML" selected="true"/>
-          <radio label="Plain text"/>
-        </radiogroup>
-        <p>Other topics you'd like to hear about</p>
-        <textarea></textarea>
-      </fieldset>
+      <div class="newsletter">
+        <fieldset>
+          <legend>Newsletter</legend>
+          <p>Select the newsletters you would like to receive</p>
+          <input type="checkbox" id="html-news"><label for="html-news"><span class="label-text"> HTML News</span></label><br>
+          <input type="checkbox" id="css-news"><label for="css-news"><span class="label-text"> CSS News</span></label><br>
+          <input type="checkbox" id="js-news"><label for="js-news"><span class="label-text"> JavaScript News</span></label><br>
+          <p>Newsletter format</p>
+          <input type="radio" name="format" id="html-format"><label for="html-format"><span class="label-text"> HTML</span></label><br>
+          <input type="radio" name="format" id="plain-format"><label for="plain-format"><span class="label-text">Plain text</span></label><br>
+          <input type="radio" name="format" id="holo-format"><label for="holo-format"><span class="label-text"> Hologram</span></label><br>
+          <p>Other topics you'd like to hear about</p>
+          <textarea></textarea>
+        </fieldset>
+      </div>
       <input type="submit" value="Sign Up">
     </form>
     <footer>
-      <p>Copyright &copy; 2016 The Code Review</p>
+      <p>Copyright The Code Review</p>
     </footer>
   </div>
 </body>
