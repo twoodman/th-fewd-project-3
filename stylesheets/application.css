@@ -1,3 +1,6 @@
+/*********************************
+IMPORTING COMPASS AND RESET
+**********************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,36 +70,55 @@ html, body {
   background: #c4c4c4;
 }
 
+/*********************************
+H1 ONLY USED IN BANNER
+**********************************/
 h1 {
-  font-family: serif;
+  font-family: "Cinzel", serif;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
+/*********************************
+H2 ONLY USED IN CTA
+**********************************/
 h2 {
-  font-family: serif;
-  font-size: 19px;
-  font-weight: bold;
-}
-
-legend {
-  font-family: serif;
+  font-family: "Patua One", serif;
   font-size: 18px;
   font-weight: bold;
 }
 
+/*********************************
+LEGENDS USED IN FIELDSET LEGENDS
+**********************************/
+legend {
+  font-family: "Patua One", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*********************************
+LABELS
+**********************************/
 label {
+  font-family: "Patua One", serif;
   display: block;
   padding-bottom: 5px;
   font-size: 16px;
 }
 
+/*********************************
+ALL THE FLUFF TEXT
+**********************************/
 p {
-  font-family: serif;
+  font-family: "Patua One", serif;
   font-size: 16px;
   font-weight: normal;
 }
 
+/*********************************
+CONTENT WRAPPER - WRAPS FORM AND CTA
+**********************************/
 .content-wrapper {
   width: 100%;
   height: 100%;
@@ -104,9 +126,17 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
+@media (min-width: 760px) {
+  .content-wrapper {
+    width: 760px;
+  }
+}
 
+/*********************************
+TOP BANNER STYLES
+**********************************/
 .banner {
-  height: 50px;
+  height: 80px;
   width: 100%;
   background: #111111;
   color: #f4f4f4;
@@ -131,18 +161,29 @@ p {
   padding: 10px 0 10px 0;
 }
 
+/*********************************
+CONTACT DIV WRAPPER
+**********************************/
 .contact-info {
   border-top: 2px solid #111111;
   margin-top: 2px;
   width: 100%;
+}
+.contact-info .required-asterisk {
+  color: #ae0015;
 }
 .contact-info legend {
   padding: 20px 0 20px 0;
 }
 .contact-info .field {
   padding-bottom: 10px;
+  /*********************************
+  SELECT & OPTION STYLES
+  **********************************/
 }
 .contact-info .field input, .contact-info .field select {
+  font-family: "Patua One", serif;
+  font-size: 17px;
   color: #f4f4f4;
   width: 100%;
   height: 50px;
@@ -152,31 +193,60 @@ p {
   border-radius: 5px;
   border: none;
   padding: 5px 10px 5px 10px;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.contact-info .field input:focus, .contact-info .field select:focus {
+  background: #5e5e5e;
 }
 .contact-info .field input:-moz-placeholder, .contact-info .field select:-moz-placeholder {
-  color: #c4c4c4;
+  color: #5e5e5e;
   font-style: italic;
   text-align: right;
+  padding-right: 4px;
 }
 .contact-info .field input::-moz-placeholder, .contact-info .field select::-moz-placeholder {
-  color: #c4c4c4;
+  color: #5e5e5e;
   font-style: italic;
   text-align: right;
+  padding-right: 4px;
 }
 .contact-info .field input:-ms-input-placeholder, .contact-info .field select:-ms-input-placeholder {
-  color: #c4c4c4;
+  color: #5e5e5e;
   font-style: italic;
   text-align: right;
+  padding-right: 4px;
 }
 .contact-info .field input::-webkit-input-placeholder, .contact-info .field select::-webkit-input-placeholder {
-  color: #c4c4c4;
+  color: #5e5e5e;
   font-style: italic;
   text-align: right;
+  padding-right: 4px;
 }
 .contact-info .field input.zip {
   width: 50%;
 }
+.contact-info .field select.planet-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #c4c4c4;
+  font-style: italic;
+  background: url("../images/dropdown_arrow.svg") no-repeat #444444;
+  background-size: 60px 30px;
+  background-position: 100% 50%;
+}
+.contact-info .field select.planet-dropdown option {
+  font-style: normal;
+  color: #c4c4c4;
+}
 
+/*********************************
+NEWSLETTER DIV WRAPPER
+**********************************/
 .newsletter {
   border-top: 2px solid #111111;
   margin-top: 10px;
@@ -185,16 +255,14 @@ p {
 .newsletter p {
   padding-bottom: 10px;
 }
-.newsletter p:nth-of-type(2), .newsletter p:nth-of-type(3) {
+.newsletter p:nth-of-type(2), .newsletter p:nth-of-type(3), .newsletter p:nth-of-type(4) {
   padding-top: 10px;
 }
 .newsletter .label-text {
-  position: absolute;
-  left: 35px;
-  margin-top: 3px;
-}
-.newsletter .format-text {
+  white-space: nowrap;
   display: inline-block;
+  margin: 0;
+  padding: 2px 0 0 25px;
 }
 .newsletter legend {
   padding: 20px 0 20px 0;
@@ -234,6 +302,8 @@ p {
   padding: 0;
 }
 .newsletter textarea {
+  font-family: "Patua One", serif;
+  font-size: 17px;
   color: #f4f4f4;
   width: 100%;
   height: 100px;
@@ -265,9 +335,15 @@ p {
   text-align: right;
 }
 
+/*********************************
+SUBMIT BUTTON
+**********************************/
 input[type="submit"] {
+  font-family: "Cinzel", serif;
+  font-size: 19px;
+  font-weight: 700;
   width: 100%;
-  height: 50px;
+  height: 60px;
   background: #ae0015;
   color: #f4f4f4;
   -moz-border-radius: 5px;
@@ -277,6 +353,9 @@ input[type="submit"] {
   margin-top: 20px;
 }
 
+/*********************************
+DEFINITELY NOT FOOTER STYLES
+**********************************/
 footer {
   width: 100%;
   height: 40px;
@@ -284,6 +363,6 @@ footer {
   text-align: center;
 }
 footer p {
-  font-size: 17.6px;
+  font-size: 15px;
   font-style: italic;
 }

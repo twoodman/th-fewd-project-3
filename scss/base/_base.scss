@@ -16,32 +16,42 @@ html, body {
   font-size: $base-font-size;
   background: $color-style-gray;
 }
-
+/*********************************
+H1 ONLY USED IN BANNER
+**********************************/
 h1 {
   font-family: $cursive-stack;
   font-size: $base-font-size + 4;
   font-weight: 700;
 }
-
+/*********************************
+H2 ONLY USED IN CTA
+**********************************/
 h2 {
   font-family: $serif-stack;
   font-size: $base-font-size + 2;
   font-weight: bold;
 }
-
+/*********************************
+LEGENDS USED IN FIELDSET LEGENDS
+**********************************/
 legend {
   font-family: $serif-stack;
   font-size: $base-font-size + 2;
   font-weight: bold;
 }
-
+/*********************************
+LABELS
+**********************************/
 label {
   font-family: $serif-stack;
   display: block;
   padding-bottom: 5px;
   font-size: $base-font-size;
 }
-
+/*********************************
+ALL THE FLUFF TEXT
+**********************************/
 p {
   font-family: $serif-stack;
   font-size: $base-font-size;
