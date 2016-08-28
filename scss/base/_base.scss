@@ -1,4 +1,6 @@
-// compass
+/*********************************
+IMPORTING COMPASS AND RESET
+**********************************/
 @import 'compass';
 @import 'compass/reset';
 
@@ -16,14 +18,14 @@ html, body {
 }
 
 h1 {
-  font-family: $serif-stack;
+  font-family: $cursive-stack;
   font-size: $base-font-size + 4;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 h2 {
   font-family: $serif-stack;
-  font-size: $base-font-size + 3;
+  font-size: $base-font-size + 2;
   font-weight: bold;
 }
 
@@ -34,6 +36,7 @@ legend {
 }
 
 label {
+  font-family: $serif-stack;
   display: block;
   padding-bottom: 5px;
   font-size: $base-font-size;

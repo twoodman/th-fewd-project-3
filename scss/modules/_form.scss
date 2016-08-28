@@ -1,13 +1,21 @@
+/*********************************
+CONTACT DIV WRAPPER
+**********************************/
 .contact-info {
   border-top: 2px solid $color-base-black;
   margin-top: 2px;
   width: 100%;
+  .required-asterisk {
+    color: $color-style-red;
+  }
   legend {
     padding: 20px 0 20px 0;
   }
   .field {
     padding-bottom: 10px;
     input, select {
+      font-family: $serif-stack;
+      font-size: $base-font-size + 1;
       color: $color-base-white;
       width: 100%;
       height: 50px;
@@ -15,35 +23,58 @@
       @include border-radius();
       border: none;
       padding: 5px 10px 5px 10px;
+      @include single-transition(all, 300ms, ease);
+      &:focus {
+        background: $color-style-dark-gray-plus-10;
+      }
       @include input-placeholder {
-        color: $color-style-gray;
+        color: $color-style-dark-gray-plus-10;
         font-style: italic;
         text-align: right;
+        padding-right: 4px;
       }
     }
     & input.zip {
       width: 50%;
     }
-
+    /*********************************
+    SELECT & OPTION STYLES
+    **********************************/
+    select.planet-dropdown {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      color: $color-style-gray;
+      font-style: italic;
+      background: url('../images/dropdown_arrow.svg') no-repeat $color-style-dark-gray;
+      background-size: 60px 30px;
+      background-position: 100% 50%;
+      option {
+        font-style: normal;
+        color: $color-style-gray;
+      }
+    }
   }
 }
+/*********************************
+NEWSLETTER DIV WRAPPER
+**********************************/
 .newsletter {
   border-top: 2px solid $color-base-black;
   margin-top: 10px;
   width: 100%;
   p {
     padding-bottom: 10px;
-    &:nth-of-type(2), &:nth-of-type(3) {
+    &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
       padding-top: 10px;
     }
   }
   .label-text {
-    position: absolute;
-    left: 35px;
-    margin-top: 3px;
-  }
-  .format-text {
+    white-space: nowrap;
     display: inline-block;
+    margin: 0;
+    padding: 2px 0 0 25px;
   }
   legend {
     padding: 20px 0 20px 0;
@@ -83,6 +114,8 @@
     }
   }
   textarea {
+    font-family: $serif-stack;
+    font-size: $base-font-size + 1;
     color: $color-base-white;
     width: 100%;
     height: 100px;
@@ -97,9 +130,15 @@
     }
   }
 }
+/*********************************
+SUBMIT BUTTON
+**********************************/
 input[type="submit"] {
+  font-family: $cursive-stack;
+  font-size: $base-font-size + 3;
+  font-weight: 700;
   width: 100%;
-  height: 50px;
+  height: 60px;
   background: $color-style-red;
   color: $color-base-white;
   @include border-radius();

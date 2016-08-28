@@ -5,10 +5,14 @@ $color-style-red : #ae0015; // red
 $color-style-gray : #c4c4c4; // grey
 $color-style-light-gray : lighten($color-style-gray, 15%);
 $color-style-dark-gray : #444444; // dark grey
+$color-style-dark-gray-plus-10 : lighten($color-style-dark-gray, 10%); // slightly lighter dark gray for placeholder
 
 // fonts
 $base-font-size : 16px;
 
 // font stacks
-$serif-stack : serif;
-$sans-stack : sans-serif;
+$cursive-stack : 'Cinzel', serif; // i refuse to use cursive as a fallback
+$serif-stack : 'Patua One', serif;
+
+// media query breaks
+$break-760 : '(min-width: 760px)';
