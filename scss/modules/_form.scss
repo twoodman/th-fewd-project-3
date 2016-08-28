@@ -1,0 +1,108 @@
+.contact-info {
+  border-top: 2px solid $color-base-black;
+  margin-top: 2px;
+  width: 100%;
+  legend {
+    padding: 20px 0 20px 0;
+  }
+  .field {
+    padding-bottom: 10px;
+    input, select {
+      color: $color-base-white;
+      width: 100%;
+      height: 50px;
+      background: $color-style-dark-gray;
+      @include border-radius();
+      border: none;
+      padding: 5px 10px 5px 10px;
+      @include input-placeholder {
+        color: $color-style-gray;
+        font-style: italic;
+        text-align: right;
+      }
+    }
+    & input.zip {
+      width: 50%;
+    }
+
+  }
+}
+.newsletter {
+  border-top: 2px solid $color-base-black;
+  margin-top: 10px;
+  width: 100%;
+  p {
+    padding-bottom: 10px;
+    &:nth-of-type(2), &:nth-of-type(3) {
+      padding-top: 10px;
+    }
+  }
+  .label-text {
+    position: absolute;
+    left: 35px;
+    margin-top: 3px;
+  }
+  .format-text {
+    display: inline-block;
+  }
+  legend {
+    padding: 20px 0 20px 0;
+  }
+  input[type=checkbox] {
+    display: none;
+    & + label {
+      background: url('../images/checkbox_unchecked.svg') no-repeat;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      padding: 0;
+    }
+    &:checked + label {
+      background: url('../images/checkbox_checked.svg') no-repeat;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      padding: 0;
+    }
+  }
+  input[type="radio"] {
+    display: none;
+    & + label {
+      background: url('../images/radio_unchecked.svg') no-repeat;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      padding: 0;
+    }
+    &:checked + label {
+      background: url('../images/radio_checked.svg') no-repeat;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      padding: 0;
+    }
+  }
+  textarea {
+    color: $color-base-white;
+    width: 100%;
+    height: 100px;
+    background: $color-style-dark-gray;
+    @include border-radius();
+    border: none;
+    padding: 5px 10px 5px 10px;
+    @include input-placeholder {
+      color: $color-style-gray;
+      font-style: italic;
+      text-align: right;
+    }
+  }
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background: $color-style-red;
+  color: $color-base-white;
+  @include border-radius();
+  border: none;
+  margin-top: 20px;
+}

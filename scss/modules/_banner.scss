@@ -1,7 +1,7 @@
 .banner {
   height: 50px;
   width: 100%;
-  background: $color-bg-dark;
+  background: $color-base-black;
   color: $color-base-white;
   @include display-flex();
   @include flex-wrap(nowrap);
