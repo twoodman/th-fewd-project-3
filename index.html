@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>THE CODE REVIEW | NEWSLETTER</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Patua+One" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/application.min.css">
 </head>
 <body>
@@ -29,23 +30,23 @@
           <legend>Contact Information</legend>
 
           <div class="field">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" required placeholder="Required">
+            <label for="name">Full Name<span class="required-asterisk">*</span></label>
+            <input type="text" id="name" required placeholder="Darth Vader">
           </div>
 
           <div class="field">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" required placeholder="Required">
+            <label for="email">Email Address<span class="required-asterisk">*</span></label>
+            <input type="email" id="email" required placeholder="dvader@empire.com">
           </div>
 
           <div class="field">
             <label for="website">Website</label>
-            <input type="url" id="website">
+            <input type="url" id="website" placeholder="http://galacticempire.com">
           </div>
 
           <div class="field">
             <label for="primary-phone-number">Primary Phone Number</label>
-            <input type="tel" id="primary-phone-number">
+            <input type="tel" id="primary-phone-number" placeholder="1-888-WE-RULE">
           </div>
 
           <div class="field">
@@ -65,13 +66,13 @@
 
           <div class="field">
             <label for="city">City</label>
-            <input type="text" id="city" placeholder="Coruscant">
+            <input type="text" id="city" placeholder="Galactic City">
           </div>
 
           <div class="field">
             <label for="planet">Planet</label>
-            <select id="planet">
-              <option disabled="disabled" selected="selected">Choose Planet</option>
+            <select class="planet-dropdown" id="planet">
+              <option selected="selected">Choose Planet</option>
               <option value="ahch-to">Ahch-To</option>
               <option value="alderaan">Alderaan (past)</option>
               <option value="bespin">Bespin</option>
@@ -122,32 +123,48 @@
 
           <div class="field">
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" class="zip">
+            <input type="text" id="zip" class="zip" placeholder="3MP 1R3">
           </div>
         </fieldset>
       </div>
+
       <!-- newsletter
       ======================================= -->
       <div class="newsletter">
         <fieldset>
           <legend>Newsletter</legend>
+
           <p>Select the newsletters you would like to receive</p>
           <input type="checkbox" id="html-news"><label for="html-news"><span class="label-text"> HTML News</span></label><br>
           <input type="checkbox" id="css-news"><label for="css-news"><span class="label-text"> CSS News</span></label><br>
           <input type="checkbox" id="js-news"><label for="js-news"><span class="label-text"> JavaScript News</span></label><br>
+
           <p>Newsletter format</p>
           <input type="radio" name="format" id="html-format"><label for="html-format"><span class="label-text"> HTML</span></label><br>
           <input type="radio" name="format" id="plain-format"><label for="plain-format"><span class="label-text">Plain text</span></label><br>
           <input type="radio" name="format" id="holo-format"><label for="holo-format"><span class="label-text"> Hologram</span></label><br>
+
+          <p>How did you hear about us?<br>Select all that apply.</p>
+          <input type="checkbox" id="online-ad"><label for="online-ad"><span class="label-text"> Online</span></label><br>
+          <input type="checkbox" id="newspaper-ad"><label for="newspaper-ad"><span class="label-text"> Newspaper</span></label><br>
+          <input type="checkbox" id="news-reader-ad"><label for="news-reader-ad"><span class="label-text"> News Reader</span></label><br>
+          <input type="checkbox" id="hologram-ad"><label for="hologram-ad"><span class="label-text"> Hologram</span></label><br>
+          <input type="checkbox" id="holo-tv-ad"><label for="holo-tv-ad"><span class="label-text"> Holo-TV</span></label><br>
+          <input type="checkbox" id="screen-ad"><label for="screen-ad"><span class="label-text"> Big Screen</span></label><br>
+          <input type="checkbox" id="word-of-mouth-ad"><label for="word-of-mouth-ad"><span class="label-text"> Word of mouth</span></label><br>
+
           <p>Other topics you'd like to hear about</p>
           <textarea></textarea>
+
         </fieldset>
       </div>
       <input type="submit" value="Sign Up">
     </form>
+
     <footer>
       <p>Copyright The Code Review</p>
     </footer>
+
   </div>
 </body>
 </html>
