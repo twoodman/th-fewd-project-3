@@ -78,6 +78,11 @@ h1 {
   font-size: 20px;
   font-weight: 700;
 }
+@media (min-width: 760px) {
+  h1 {
+    font-size: 24px;
+  }
+}
 
 /*********************************
 H2 ONLY USED IN CTA
@@ -87,6 +92,11 @@ h2 {
   font-size: 18px;
   font-weight: bold;
 }
+@media (min-width: 760px) {
+  h2 {
+    font-size: 20px;
+  }
+}
 
 /*********************************
 LEGENDS USED IN FIELDSET LEGENDS
@@ -95,6 +105,11 @@ legend {
   font-family: "Patua One", serif;
   font-size: 18px;
   font-weight: bold;
+}
+@media (min-width: 760px) {
+  legend {
+    font-size: 20px;
+  }
 }
 
 /*********************************
@@ -106,6 +121,13 @@ label {
   padding-bottom: 5px;
   font-size: 16px;
 }
+@media (min-width: 760px) {
+  label {
+    font-size: 17px;
+    display: inline-block;
+    padding-top: 15px;
+  }
+}
 
 /*********************************
 ALL THE FLUFF TEXT
@@ -114,6 +136,11 @@ p {
   font-family: "Patua One", serif;
   font-size: 16px;
   font-weight: normal;
+}
+@media (min-width: 760px) {
+  p {
+    font-size: 17px;
+  }
 }
 
 /*********************************
@@ -162,8 +189,12 @@ TOP BANNER STYLES
 }
 
 /*********************************
-CONTACT DIV WRAPPER
+FORM STYLES
 **********************************/
+legend {
+  padding: 20px 0 20px 0;
+}
+
 .contact-info {
   border-top: 2px solid #111111;
   margin-top: 2px;
@@ -171,9 +202,6 @@ CONTACT DIV WRAPPER
 }
 .contact-info .required-asterisk {
   color: #ae0015;
-}
-.contact-info legend {
-  padding: 20px 0 20px 0;
 }
 .contact-info .field {
   padding-bottom: 10px;
@@ -225,8 +253,22 @@ CONTACT DIV WRAPPER
   text-align: right;
   padding-right: 4px;
 }
+@media (min-width: 760px) {
+  .contact-info .field input, .contact-info .field select {
+    display: inline-block;
+    width: 70%;
+    float: right;
+    clear: both;
+  }
+}
 .contact-info .field input.zip {
   width: 50%;
+}
+@media (min-width: 760px) {
+  .contact-info .field input.zip {
+    width: 80%;
+    padding-right: 40%;
+  }
 }
 .contact-info .field select.planet-dropdown {
   -webkit-appearance: none;
@@ -242,6 +284,11 @@ CONTACT DIV WRAPPER
 .contact-info .field select.planet-dropdown option {
   font-style: normal;
   color: #c4c4c4;
+}
+@media (min-width: 760px) {
+  .contact-info .field {
+    height: 80px;
+  }
 }
 
 /*********************************
@@ -263,9 +310,6 @@ NEWSLETTER DIV WRAPPER
   display: inline-block;
   margin: 0;
   padding: 2px 0 0 25px;
-}
-.newsletter legend {
-  padding: 20px 0 20px 0;
 }
 .newsletter input[type=checkbox] {
   display: none;

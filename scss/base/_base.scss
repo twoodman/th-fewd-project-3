@@ -23,6 +23,9 @@ h1 {
   font-family: $cursive-stack;
   font-size: $base-font-size + 4;
   font-weight: 700;
+  @media #{$break-760} {
+    font-size: $base-font-size + 8;
+  }
 }
 /*********************************
 H2 ONLY USED IN CTA
@@ -31,6 +34,9 @@ h2 {
   font-family: $serif-stack;
   font-size: $base-font-size + 2;
   font-weight: bold;
+  @media #{$break-760} {
+    font-size: $base-font-size + 4;
+  }
 }
 /*********************************
 LEGENDS USED IN FIELDSET LEGENDS
@@ -39,6 +45,9 @@ legend {
   font-family: $serif-stack;
   font-size: $base-font-size + 2;
   font-weight: bold;
+  @media #{$break-760} {
+    font-size: $base-font-size + 4;
+  }
 }
 /*********************************
 LABELS
@@ -48,6 +57,11 @@ label {
   display: block;
   padding-bottom: 5px;
   font-size: $base-font-size;
+  @media #{$break-760} {
+    font-size: $base-font-size + 1;
+    display: inline-block;
+    padding-top: 15px;
+  }
 }
 /*********************************
 ALL THE FLUFF TEXT
@@ -56,4 +70,7 @@ p {
   font-family: $serif-stack;
   font-size: $base-font-size;
   font-weight: normal;
+  @media #{$break-760} {
+    font-size: $base-font-size + 1;
+  }
 }
