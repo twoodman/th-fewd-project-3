@@ -15,6 +15,10 @@ html, body {
   width: 100%;
   font-size: $base-font-size;
   background: $color-style-gray;
+  @include single-transition(background, 5s, ease);
+  @media #{$break-1200} {
+    background: $color-style-gray-minus-25;
+  }
 }
 /*********************************
 H1 ONLY USED IN BANNER

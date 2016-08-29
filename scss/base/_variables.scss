@@ -1,8 +1,10 @@
 // colours
 $color-base-white : #f4f4f4; // white colour used in font
 $color-base-black : #111111;
-$color-style-red : #ae0015; // red
+$color-style-red : #ae0015; // red used in highlighting colours and sign up button
+$color-style-red-plus-10 : lighten($color-style-red, 10%); // used in sign up button hover
 $color-style-gray : #c4c4c4; // grey
+$color-style-gray-minus-25 : darken($color-style-gray, 25%); // used in 1200px bg transition
 $color-style-light-gray : lighten($color-style-gray, 15%);
 $color-style-dark-gray : #444444; // dark grey
 $color-style-dark-gray-plus-10 : lighten($color-style-dark-gray, 10%); // slightly lighter dark gray for placeholder
@@ -15,4 +17,6 @@ $cursive-stack : 'Cinzel', serif; // i refuse to use cursive as a fallback
 $serif-stack : 'Patua One', serif;
 
 // media query breaks
+$break-270 : '(min-width: 270px)';
 $break-760 : '(min-width: 760px)';
+$break-1200 : '(min-width: 1200px)';
