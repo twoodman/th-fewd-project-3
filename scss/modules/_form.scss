@@ -36,17 +36,17 @@ legend {
         @media #{$break-270} {
           font-size: $base-font-size + 2;
         }
-        @media #{$break-760} {
+        @media #{$break-760-tab} {
           font-size: $base-font-size + 4;
         }
-        @media #{$break-1024} {
+        @media #{$break-760} {
           font-size: $base-font-size + 3;
         }
       }
-      @media #{$break-760} {
+      @media #{$break-760-tab} {
         height: 80px;
       }
-      @media #{$break-1024} {
+      @media #{$break-760} {
         height: 50px;
         display: inline-block;
         width: 70%;
@@ -56,10 +56,10 @@ legend {
     }
     & input.zip {
       width: 50%;
-      @media #{$break-760} {
+      @media #{$break-760-tab} {
         display: block;
       }
-      @media #{$break-1024} {
+      @media #{$break-760} {
         display: inline-block;
         position: absolute;
         margin-left: 158px;
@@ -85,7 +85,7 @@ legend {
         color: $color-style-gray;
       }
     }
-    @media #{$break-1024} {
+    @media #{$break-760} {
       height: 80px
     }
   }
@@ -109,10 +109,10 @@ NEWSLETTER DIV WRAPPER
     margin: 0;
     padding: 2px 0 0 25px;
     font-size: $base-font-size;
-    @media #{$break-760} {
+    @media #{$break-760-tab} {
       font-size: $base-font-size + 4;
     }
-    @meidia #{$break-1024} {
+    @meidia #{$break-760} {
       font-size: $base-font-size + 3;
     }
   }
@@ -188,11 +188,11 @@ NEWSLETTER DIV WRAPPER
     @media #{$break-270} {
       font-size: $base-font-size + 2;
     }
-    @media #{$break-760} {
+    @media #{$break-760-tab} {
       height: 150px;
       font-size: $base-font-size + 4;
     }
-    @media #{$break-1024} {
+    @media #{$break-760} {
       height: 100px;
       font-size: $base-font-size + 3;
     }
@@ -217,11 +217,11 @@ input[type="submit"] {
   &:hover {
     background: $color-style-red-plus-10;
   }
-  @media #{$break-760} {
+  @media #{$break-760-tab} {
     height: 80px;
     font-size: $base-font-size + 6;
   }
-  @media #{$break-1024} {
+  @media #{$break-760} {
     height: 60px;
     font-size: $base-font-size + 4;
   }
