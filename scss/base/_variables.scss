@@ -1,11 +1,10 @@
 // colours
 $color-base-white : #f4f4f4; // white colour used in font
-$color-base-black : #111111;
+$color-base-black : #111111; // used in banner bg
 $color-style-red : #ae0015; // red used in highlighting colours and sign up button
 $color-style-red-plus-10 : lighten($color-style-red, 10%); // used in sign up button hover
-$color-style-gray : #c4c4c4; // grey
-$color-style-gray-minus-25 : darken($color-style-gray, 25%); // used in 1200px bg transition
-$color-style-light-gray : lighten($color-style-gray, 15%);
+$color-style-gray : #c4c4c4; // grey used in body bg
+$color-style-gray-minus-25 : darken($color-style-gray, 25%); // used in 1024px bg transition
 $color-style-dark-gray : #444444; // dark grey
 $color-style-dark-gray-plus-10 : lighten($color-style-dark-gray, 10%); // slightly lighter dark gray for placeholder
 
@@ -13,11 +12,11 @@ $color-style-dark-gray-plus-10 : lighten($color-style-dark-gray, 10%); // slight
 $base-font-size : 16px;
 
 // font stacks
-$cursive-stack : 'Cinzel', serif; // i refuse to use cursive as a fallback
+$cursive-stack : 'Cinzel', serif; // i refuse to use 'cursive' as a fallback
 $serif-stack : 'Patua One', serif;
 
 // media query breaks
-$break-270 : '(min-width: 270px)';
-$break-760-tab : 'only screen and (min-device-width: 760px) and (max-device-width: 1024px),
-only screen and (min-device-width: 760px) and (max-device-width: 1024px)';
-$break-760 : '(min-width: 760px)';
+$break-270 : '(min-width: 270px)'; // mobile
+$break-760-tab : 'only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait),
+only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape)'; // tablets
+$break-1024 : '(min-width: 1024px)'; // desktop
