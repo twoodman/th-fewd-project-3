@@ -16,7 +16,7 @@ html, body {
   font-size: $base-font-size;
   background: $color-style-gray;
   @include single-transition(background, 5s, ease);
-  @media #{$break-1200} {
+  @media #{$break-1024} {
     background: $color-style-gray-minus-25;
   }
 }
