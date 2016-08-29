@@ -1,7 +1,5 @@
 // require modules
 var gulp = require('gulp'),
-    // minifies js
-    uglify = require('gulp-uglify'),
     // compiles Sass & compass
     compass = require('gulp-compass'),
     // minifies css
@@ -12,17 +10,6 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     // webserver & live reload
     webserver = require('gulp-webserver');
-
-// minify javascripts & output to js folder
-gulp.task('scripts', function() {
-  gulp.src('js/*.js')
-  .pipe(plumber())
-  .pipe(uglify())
-  .pipe(rename({
-    suffix: '.min'
-  }))
-  .pipe(gulp.dest('js/'));
-})
 
 // compile Sass, minify, & output to stylesheets folder
 gulp.task('sass', function() {
@@ -54,8 +41,7 @@ gulp.task('reload', function() {
 //  watch task
 gulp.task('watchthis', function() {
   gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('js/*.js', ['scripts']);
 });
 
 // default task
-gulp.task('do', ['scripts', 'sass', 'watchthis', 'reload']);
+gulp.task('do', ['sass', 'watchthis', 'reload']);
