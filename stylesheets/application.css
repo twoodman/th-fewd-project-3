@@ -67,6 +67,10 @@ html, body {
   height: 100%;
   width: 100%;
   font-size: 16px;
+}
+
+body {
+  min-height: 100%;
   background: #c4c4c4;
   -moz-transition: background 5s ease;
   -o-transition: background 5s ease;
@@ -74,7 +78,7 @@ html, body {
   transition: background 5s ease;
 }
 @media (min-width: 1024px) {
-  html, body {
+  body {
     background: #848484;
   }
 }
@@ -208,6 +212,9 @@ legend {
   border-top: 2px solid #111111;
   margin-top: 2px;
   width: 100%;
+}
+.contact-info .required-text {
+  padding-bottom: 25px;
 }
 .contact-info .required-asterisk {
   color: #ae0015;

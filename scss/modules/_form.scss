@@ -8,6 +8,9 @@ legend {
   border-top: 2px solid $color-base-black;
   margin-top: 2px;
   width: 100%;
+  .required-text {
+    padding-bottom: 25px;
+  }
   .required-asterisk {
     color: $color-style-red;
   }
