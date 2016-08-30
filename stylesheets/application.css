@@ -77,7 +77,7 @@ body {
   -webkit-transition: background 5s ease;
   transition: background 5s ease;
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   body {
     background: #848484;
   }
@@ -91,7 +91,7 @@ h1 {
   font-size: 20px;
   font-weight: 700;
 }
-@media (min-width: 1024px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-width: 760px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
   h1 {
     font-size: 24px;
   }
@@ -105,7 +105,7 @@ h2 {
   font-size: 18px;
   font-weight: bold;
 }
-@media (min-width: 1024px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-width: 760px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
   h2 {
     font-size: 20px;
   }
@@ -119,7 +119,7 @@ legend {
   font-size: 18px;
   font-weight: bold;
 }
-@media (min-width: 1024px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-width: 760px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
   legend {
     font-size: 20px;
   }
@@ -134,7 +134,7 @@ label {
   padding-bottom: 5px;
   font-size: 16px;
 }
-@media (min-width: 1024px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-width: 760px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
   label {
     font-size: 17px;
     display: inline-block;
@@ -150,7 +150,7 @@ p {
   font-size: 16px;
   font-weight: normal;
 }
-@media (min-width: 1024px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-width: 760px), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape) {
   p {
     font-size: 17px;
   }
@@ -166,7 +166,7 @@ CONTENT WRAPPER - WRAPS FORM AND CTA
   padding-left: 10px;
   padding-right: 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .content-wrapper {
     width: 760px;
   }
@@ -262,7 +262,7 @@ legend {
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field input:-moz-placeholder, .contact-info .field select:-moz-placeholder {
     font-size: 19px;
   }
@@ -284,7 +284,7 @@ legend {
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field input::-moz-placeholder, .contact-info .field select::-moz-placeholder {
     font-size: 19px;
   }
@@ -306,7 +306,7 @@ legend {
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field input:-ms-input-placeholder, .contact-info .field select:-ms-input-placeholder {
     font-size: 19px;
   }
@@ -328,7 +328,7 @@ legend {
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field input::-webkit-input-placeholder, .contact-info .field select::-webkit-input-placeholder {
     font-size: 19px;
   }
@@ -338,7 +338,7 @@ legend {
     height: 80px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field input, .contact-info .field select {
     height: 50px;
     display: inline-block;
@@ -355,7 +355,7 @@ legend {
     display: block;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field input.zip {
     display: inline-block;
     position: absolute;
@@ -378,7 +378,7 @@ legend {
   font-style: normal;
   color: #c4c4c4;
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .contact-info .field {
     height: 80px;
   }
@@ -410,7 +410,7 @@ NEWSLETTER DIV WRAPPER
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .newsletter .label-text {
     font-size: 19px;
   }
@@ -528,7 +528,7 @@ NEWSLETTER DIV WRAPPER
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   .newsletter textarea {
     height: 100px;
     font-size: 19px;
@@ -566,7 +566,7 @@ input[type="submit"]:hover {
     font-size: 22px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
   input[type="submit"] {
     height: 60px;
     font-size: 20px;

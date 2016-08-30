@@ -17,6 +17,5 @@ $serif-stack : 'Patua One', serif;
 
 // media query breaks
 $break-270 : '(min-width: 270px)'; // mobile
-$break-760-tab : 'only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait),
-only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape)'; // tablets
-$break-1024 : '(min-width: 1024px)'; // desktop
+$break-760-tab : 'only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (min-device-width: 760px) and (max-device-width: 1024px) and (orientation: landscape)'; // tablets
+$break-760 : '(min-width: 760px)'; // desktop

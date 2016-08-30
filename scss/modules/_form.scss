@@ -42,14 +42,14 @@ legend {
         @media #{$break-760-tab} {
           font-size: $base-font-size + 4;
         }
-        @media #{$break-1024} {
+        @media #{$break-760} {
           font-size: $base-font-size + 3;
         }
       }
       @media #{$break-760-tab} {
         height: 80px;
       }
-      @media #{$break-1024} {
+      @media #{$break-760} {
         height: 50px;
         display: inline-block;
         width: 70%;
@@ -62,7 +62,7 @@ legend {
       @media #{$break-760-tab} {
         display: block;
       }
-      @media #{$break-1024} {
+      @media #{$break-760} {
         display: inline-block;
         position: absolute;
         margin-left: 158px;
@@ -87,7 +87,7 @@ legend {
         color: $color-style-gray;
       }
     }
-    @media #{$break-1024} {
+    @media #{$break-760} {
       height: 80px
     }
   }
@@ -114,7 +114,7 @@ NEWSLETTER DIV WRAPPER
     @media #{$break-760-tab} {
       font-size: $base-font-size + 4;
     }
-    @media #{$break-1024} {
+    @media #{$break-760} {
       font-size: $base-font-size + 3;
     }
   }
@@ -194,7 +194,7 @@ NEWSLETTER DIV WRAPPER
       height: 150px;
       font-size: $base-font-size + 4;
     }
-    @media #{$break-1024} {
+    @media #{$break-760} {
       height: 100px;
       font-size: $base-font-size + 3;
     }
@@ -223,7 +223,7 @@ input[type="submit"] {
     height: 80px;
     font-size: $base-font-size + 6;
   }
-  @media #{$break-1024} {
+  @media #{$break-760} {
     height: 60px;
     font-size: $base-font-size + 4;
   }
