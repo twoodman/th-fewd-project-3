@@ -9,4 +9,8 @@ To Run:
 - Open index.html in browser
 
 
+Or:
+- http://twoodman.github.io/th-fewd-project-3
+
+
 *Un-minified files included in respective folders.*
