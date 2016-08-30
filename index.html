@@ -28,50 +28,51 @@
       <div class="contact-info">
         <fieldset>
           <legend>Contact Information</legend>
+          <p class="required-text">Required fields marked with asterisk<span class="required-asterisk">*</span></p>
 
           <div class="field">
             <label for="name">Full Name<span class="required-asterisk">*</span></label>
-            <input type="text" id="name" required placeholder="Darth Vader">
+            <input type="text" name="form_name" id="name" required placeholder="Darth Vader">
           </div>
 
           <div class="field">
             <label for="email">Email Address<span class="required-asterisk">*</span></label>
-            <input type="email" id="email" required placeholder="dvader@empire.com">
+            <input type="email" name="form_email" id="email" required placeholder="dvader@empire.com">
           </div>
 
           <div class="field">
             <label for="website">Website</label>
-            <input type="url" id="website" placeholder="http://galacticempire.com">
+            <input type="url" name="form_website" id="website" placeholder="http://galacticempire.com">
           </div>
 
           <div class="field">
             <label for="primary-phone-number">Primary Phone Number</label>
-            <input type="tel" id="primary-phone-number" placeholder="1-888-WE-RULE">
+            <input type="tel" name="form_primary-phone-number" id="primary-phone-number" placeholder="1-888-WE-RULE">
           </div>
 
           <div class="field">
             <label for="secondary-phone-number">Secondary Phone Number</label>
-            <input type="tel" id="secondary-phone-number">
+            <input type="tel" name="form_secondary-phone-number" id="secondary-phone-number">
           </div>
 
           <div class="field">
             <label for="fax-number">Fax Number</label>
-            <input type="tel" id="fax-number">
+            <input type="tel" name="form_fax-number" id="fax-number">
           </div>
 
           <div class="field">
             <label for="street-address">Street Address</label>
-            <input type="text" id="street-address" placeholder="Empire Ave">
+            <input type="text" name="form_street-address" id="street-address" placeholder="Empire Ave">
           </div>
 
           <div class="field">
             <label for="city">City</label>
-            <input type="text" id="city" placeholder="Galactic City">
+            <input type="text" name="form_city" id="city" placeholder="Galactic City">
           </div>
 
           <div class="field">
             <label for="planet">Planet</label>
-            <select class="planet-dropdown" id="planet">
+            <select class="planet-dropdown" name="form_planet" id="planet">
               <option disabled="disabled" selected="selected">Choose Planet</option>
               <option value="ahch-to">Ahch-To</option>
               <option value="alderaan">Alderaan (past)</option>
@@ -123,7 +124,7 @@
 
           <div class="field">
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" class="zip" placeholder="3MP 1R3">
+            <input type="text" name="form_zip" id="zip" class="zip" placeholder="3MP 1R3">
           </div>
         </fieldset>
       </div>
@@ -135,30 +136,31 @@
           <legend>Newsletter</legend>
 
           <p>Select the newsletters you would like to receive</p>
-          <input type="checkbox" id="html-news"><label for="html-news"><span class="label-text"> HTML News</span></label><br>
-          <input type="checkbox" id="css-news"><label for="css-news"><span class="label-text"> CSS News</span></label><br>
-          <input type="checkbox" id="js-news"><label for="js-news"><span class="label-text"> JavaScript News</span></label><br>
+          <input type="checkbox" name="form_html-news" id="html-news"><label for="html-news"><span class="label-text"> HTML News</span></label><br>
+          <input type="checkbox" name="form_css-news" id="css-news"><label for="css-news"><span class="label-text"> CSS News</span></label><br>
+          <input type="checkbox" name="form_js-news" id="js-news"><label for="js-news"><span class="label-text"> JavaScript News</span></label><br>
 
           <p>Newsletter format</p>
-          <input type="radio" name="format" id="html-format"><label for="html-format"><span class="label-text"> HTML</span></label><br>
-          <input type="radio" name="format" id="plain-format"><label for="plain-format"><span class="label-text">Plain text</span></label><br>
-          <input type="radio" name="format" id="holo-format"><label for="holo-format"><span class="label-text"> Hologram</span></label><br>
+          <input type="radio" name="form_format" id="html-format"><label for="html-format"><span class="label-text"> HTML</span></label><br>
+          <input type="radio" name="form_format" id="plain-format"><label for="plain-format"><span class="label-text">Plain text</span></label><br>
+          <input type="radio" name="form_format" id="holo-format"><label for="holo-format"><span class="label-text"> Hologram</span></label><br>
 
           <p>How did you hear about us?<br>Select all that apply.</p>
-          <input type="checkbox" id="online-ad"><label for="online-ad"><span class="label-text"> Online</span></label><br>
-          <input type="checkbox" id="newspaper-ad"><label for="newspaper-ad"><span class="label-text"> Newspaper</span></label><br>
-          <input type="checkbox" id="news-reader-ad"><label for="news-reader-ad"><span class="label-text"> News Reader</span></label><br>
-          <input type="checkbox" id="hologram-ad"><label for="hologram-ad"><span class="label-text"> Hologram</span></label><br>
-          <input type="checkbox" id="holo-tv-ad"><label for="holo-tv-ad"><span class="label-text"> Holo-TV</span></label><br>
-          <input type="checkbox" id="screen-ad"><label for="screen-ad"><span class="label-text"> Big Screen</span></label><br>
-          <input type="checkbox" id="word-of-mouth-ad"><label for="word-of-mouth-ad"><span class="label-text"> Word of mouth</span></label><br>
+          <input type="checkbox" name="form_online-ad" id="online-ad"><label for="online-ad"><span class="label-text"> Online</span></label><br>
+          <input type="checkbox" name="form_newspaper-ad" id="newspaper-ad"><label for="newspaper-ad"><span class="label-text"> Newspaper</span></label><br>
+          <input type="checkbox" name="form_news-reader-ad" id="news-reader-ad"><label for="news-reader-ad"><span class="label-text"> News Reader</span></label><br>
+          <input type="checkbox" name="form_hologram-ad" id="hologram-ad"><label for="hologram-ad"><span class="label-text"> Hologram</span></label><br>
+          <input type="checkbox" name="form_holo-tv-ad" id="holo-tv-ad"><label for="holo-tv-ad"><span class="label-text"> Holo-TV</span></label><br>
+          <input type="checkbox" name="form_screen-ad" id="screen-ad"><label for="screen-ad"><span class="label-text"> Big Screen</span></label><br>
+          <input type="checkbox" name="form_word-of-mouth-ad" id="word-of-mouth-ad"><label for="word-of-mouth-ad"><span class="label-text"> Word of mouth</span></label><br>
 
           <p>Other topics you'd like to hear about</p>
-          <textarea placeholder="How do I make perfect pancakes?"></textarea>
+          <label for="other">Anything at all</label>
+          <textarea name="form_other" id="other" placeholder="How do I make perfect pancakes?"></textarea>
 
         </fieldset>
       </div>
-      <input type="submit" value="Sign Up">
+      <input type="submit" name="form_submit" value="Sign Up">
     </form>
 
     <footer>
